@@ -1,0 +1,715 @@
+/* ==================== BASE E RESET (AJUSTADO) ==================== */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6e0;
+  line-height: 1.6; /* Mais flexível que '30px' */
+  font-family: Arial, Helvetica, sans-serif;
+  
+  /* IMPORTANTE: Adiciona espaço no topo para o cabeçalho fixo */
+  padding-top: 100px; 
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px; /* Padding padrão menor */
+}
+
+/* ==================== HEADER (NOVO E UNIFICADO) ==================== */
+header {
+  display: flex;
+  justify-content: space-between; /* Itens para os cantos */
+  align-items: center;            /* Alinha tudo verticalmente */
+  padding: 10px 40px;             /* Espaçamento interno */
+  width: 100%;
+  background-color: #e6e6e0;      
+  
+  /* O cabeçalho fixo */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que fique na frente de tudo */
+  border-bottom: 1px solid #ddd; /* Linha sutil */
+}
+
+/* Container para agrupar a logo e o menu */
+.header-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Espaço entre a logo e o menu */
+}
+
+/* LOGO: Resetada */
+#logo_home {
+  position: static; /* RESETA a posição */
+  width: 90px;      
+  height: auto;
+}
+
+/* MENU: Resetado */
+#menu {
+  position: static;     /* RESETA a posição */
+  line-height: normal;  
+  font-size: 24px;      
+  color: #A92B47;
+  font-weight: bold;
+}
+
+/* Links do menu */
+#menu a {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A92B47;
+}
+
+/* LOGIN: Resetado */
+#login {
+  position: static; /* RESETA a posição */
+  width: auto;
+  text-align: center;
+  display: flex; /* Para os botões ficarem lado a lado */
+  gap: 10px;
+}
+
+.botão_login {
+  background-color: #A92B47;
+  color: white;
+  border: none;
+  padding: 13px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* ==================== TÍTULOS (CORRIGIDO) ==================== */
+#titulo_home,
+#titulo_sobre,
+#titulo_livros,
+#titulo_contatos {
+  color: #A92B47;
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(50px, 10vw, 140px); 
+  padding-top: 40px; 
+  padding-bottom: 40px;
+}
+
+#titulo_sobre {
+  padding-bottom: 80px;
+}
+
+/* ==================== SLOGAN (CORRIGIDO) ==================== */
+#caixa_slogan {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #283639;
+  
+  /* LARGURA E POSIÇÃO CORRIGIDAS */
+  width: 90%;             
+  max-width: 800px;       
+  margin: 40px auto; /* Centraliza */
+  
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-weight: bold;
+  font-size: clamp(24px, 5vw, 35px); /* Fonte responsiva */       
+  color: #ffffff;
+  transition: transform 0.5s;
+  padding: 20px 40px;     
+  
+  position: static; /* RESETA A POSIÇÃO */
+  height: auto; 
+  word-spacing: normal; 
+  letter-spacing: normal;
+}
+
+/* Seletores antigos de Slogan (mantidos caso sejam usados) */
+.slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  height: 75px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+#slogan_txt {
+  color: #A92B47;
+  font-size: 40px;
+  text-align: center;
+}
+section.caixas {
+  padding-top: 80px;
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ==================== FOOTER ==================== */
+#footer {
+  background-color: #A92B47;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px; /* Reduzido de 500px */
+}
+
+#letras_footer {
+  padding: 90px;
+}
+
+/* ==================== GALERIA (JÁ ESTAVA BOA) ==================== */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.galeria-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.preco {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #A92B47;
+}
+
+/* ==================== CONTEÚDO (CORRIGIDO) ==================== */
+#topico {
+  color: #A92B47;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 50px;
+
+  /* Fonte responsiva */
+  font-size: clamp(30px, 6vw, 50px);
+  /* Padding-top ajustado (vem depois do header) */
+  padding-top: 40px;
+}
+
+#paragrafo {
+  font-weight: bold;
+  color: #283639;
+  text-align: center;
+  padding-bottom: 100px;
+
+  /* Centralização corrigida */
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(18px, 3vw, 25px);
+}
+
+/* Posição resetada, agora está dentro do <header> */
+#livros {
+  position: relative; 
+  /* top: -200px; (Removido magic number) */
+}
+
+/* ==================== CONTAINERS (CORRIGIDO) ==================== */
+/* Este é o bloco que substitui .container_direita, .container_esquerda, etc. */
+
+.container-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 90%;
+  max-width: 1600px;
+  margin: 100px auto; /* Centraliza */
+  padding: 20px;
+}
+
+/* Modificador para inverter a ordem */
+.container-layout--reverso {
+  flex-direction: row-reverse;
+}
+
+.container-layout img {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container-layout .caixa {
+  flex: 1.5;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #283639;
+  padding: 40px;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 50px;
+}
+
+.caixa p {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.caixa h2 {
+  color: #f75276;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+/* ==================== LIVROS (CORRIGIDO) ==================== */
+#subtitulo_livros {
+  color: #A92B47;
+  font-size: clamp(20px, 4vw, 30px); /* Responsivo */
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+
+.catalogo_livros {
+  color: #A92B47;
+  text-align: center;
+  font-weight: bold;
+  
+  /* Fonte responsiva */
+  font-size: clamp(40px, 7vw, 80px);
+  
+  /* Padding ajustado */
+  padding-top: 100px; 
+  padding-bottom: 80px;
+}
+
+/* ==================== FORMULÁRIO LOGIN (JÁ ESTAVA BOM) ==================== */
+/* Esta seção inteira é para as páginas login.html e cadastro.html */
+/* Ela já usa flexbox e é responsiva. Não precisa mexer. */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6e6e0;
+}
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 1500px;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: #A92B47;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  left: 0;
+}
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.title-primary { color: #fff; }
+.title-second { color: #A92B47; }
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.description-primary { color: #fff; }
+.description-second { color: #A92B47; }
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: background-color .5s;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #A92B47;
+}
+.btn-second {
+  background-color: #A92B47;
+  border: 1px solid #A92B47;
+  transition: background-color .5s;
+}
+.btn-second:hover {
+  background-color: #fff;
+  border: 1px solid #A92B47;
+  color: #A92B47;
+}
+.first-content { display: flex; }
+.first-content .second-column { z-index: 11; }
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+}
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media { margin: 1rem 0; }
+.link-social-media:not(:first-child) { margin-left: 10px; }
+.link-social-media .item-social-media { transition: background-color .5s; }
+.link-social-media:hover .item-social-media {
+  background-color: #A92B47;
+  color: #fff;
+  border-color: #A92B47;
+}
+.list-social-media {
+  display: flex;
+  list-style-type: none;
+}
+.item-social-media {
+  border: 1px solid #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #95a5a6;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+.form input {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #ecf0f1;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+.label-input {
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+.icon-modify {
+  color: #7f8c8d;
+  padding: 0 5px;
+}
+.second-content {
+  position: absolute;
+  display: flex;
+}
+.second-content .first-column {
+  order: 2;
+  z-index: -1;
+}
+.second-content .second-column {
+  order: 1;
+  z-index: -1;
+}
+.password {
+  color: #34495e;
+  font-size: 14px;
+  margin: 15px 0;
+  text-align: center;
+}
+.password::first-letter { text-transform: capitalize; }
+
+/* Animações e Keyframes do Login (Mantidos) */
+.sign-in-js .first-content .first-column { z-index: -1; }
+.sign-in-js .second-content .second-column { z-index: 11; }
+.sign-in-js .second-content .first-column { z-index: 13; }
+.sign-in-js .content::before {
+  left: 60%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  animation: slidein 1.3s;
+  z-index: 12;
+}
+.sign-up-js .content::before {
+  animation: slideout 1.3s;
+  z-index: 12;
+}
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column { z-index: -1; }
+.sign-up-js .first-content .second-column { z-index: 11; }
+.sign-up-js .first-content .first-column { z-index: 13; }
+.sign-in-js .first-content .second-column {
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoEsq 1.3s;
+}
+.sign-up-js .second-content .second-column {
+  position: relative;
+  z-index: -1;
+  animation: deslocamentoDir 1.3s;
+}
+@keyframes deslocamentoEsq {
+  from { left: 0; opacity: 1; z-index: 12; }
+  25% { left: -80px; opacity: .5; }
+  50% { left: -100px; opacity: .2; }
+  to { left: -110px; opacity: 0; z-index: -1; }
+}
+@keyframes deslocamentoDir {
+  from { left: 0; z-index: 12; }
+  25% { left: 80px; }
+  50% { left: 100px; }
+  to { left: 110px; z-index: -1; }
+}
+@keyframes slidein {
+  from { left: 0; width: 40%; }
+  25% { left: 5%; width: 50%; }
+  50% { left: 25%; width: 60%; }
+  75% { left: 45%; width: 50%; }
+  to { left: 60%; width: 40%; }
+}
+@keyframes slideout {
+  from { left: 60%; width: 40%; }
+  25% { left: 45%; width: 50%; }
+  50% { left: 25%; width: 60%; }
+  75% { left: 5%; width: 50%; }
+  to { left: 0; width: 40%; }
+}
+
+/* ==================== RESPONSIVIDADE (AJUSTADO) ==================== */
+/* Media queries do Formulário (Mantidas) */
+@media screen and (max-width: 1040px) {
+  .content { width: 100%; height: 100%; }
+  .content::before { width: 100%; height: 40%; top: 0; border-radius: 0; }
+  .first-content, .second-content { flex-direction: column; justify-content: space-around; }
+  .first-column, .second-column { width: 100%; }
+  .sign-in-js .content::before { top: 60%; left: 0; border-radius: 0; }
+  .form { width: 90%; }
+
+  @keyframes deslocamentoEsq {
+    from { top: 0; opacity: 1; z-index: 12; }
+    25% { top: -80px; opacity: .5; }
+    50% { top: -100px; opacity: .2; }
+    to { top: -110px; opacity: 0; z-index: -1; }
+  }
+  @keyframes deslocamentoDir {
+    from { top: 0; z-index: 12; }
+    25% { top: 80px; }
+    50% { top: 100px; }
+    to { top: 110px; z-index: -1; }
+  }
+  @keyframes slidein {
+    from { top: 0; height: 40%; }
+    25% { top: 5%; height: 50%; }
+    50% { top: 25%; height: 60%; }
+    75% { top: 45%; height: 50%; }
+    to { top: 60%; height: 40%; }
+  }
+  @keyframes slideout {
+    from { top: 60%; height: 40%; }
+    25% { top: 45%; height: 50%; }
+    50% { top: 25%; height: 60%; }
+    75% { top: 5%; height: 50%; }
+    to { top: 0; height: 40%; }
+  }
+}
+@media screen and (max-width: 740px) {
+  .form { width: 50%; }
+}
+@media screen and (max-width: 425px) {
+  .form { width: 100%; }
+}
+
+/* === NOVAS MEDIA QUERIES PARA O LAYOUT PRINCIPAL === */
+@media screen and (max-width: 768px) {
+  
+  /* Faz os containers (imagem + texto) ficarem em coluna */
+  .container-layout,
+  .container-layout--reverso {
+    flex-direction: column;
+    margin: 40px auto; /* Espaçamento menor em telas pequenas */
+  }
+
+  /* Faz o cabeçalho se ajustar */
+  header {
+    flex-direction: column;
+    padding: 10px;
+    position: static; /* Cabeçalho deixa de ser fixo em telas pequenas */
+  }
+  
+  /* O body não precisa mais de padding-top */
+  body {
+    padding-top: 0;
+  }
+  
+  #menu {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  #menu a {
+      font-size: 18px;
+  }
+
+  /* Centraliza o login */
+  #login {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #e6e6e0;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #711818;
+  font-weight: bold;
+}
+
+.book-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #A92B47; /* fundo escuro */
+  color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 1000px;
+  padding: 1.5rem;
+  margin: 11rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2); /* aumenta tudo em 10% */
+  transform-origin: center; /* mantém o centro fixo */
+
+}
+
+/* ---------- CAPA DO LIVRO ---------- */
+.book-cover img {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ratings {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* ---------- INFORMAÇÕES DO LIVRO ---------- */
+.book-info {
+  max-width: 600px;
+}
+
+.book-info h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.book-info h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #e6e6e6;
+}
+
+.book-info p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* ---------- CRÍTICAS ---------- */
+.criticas {
+  background: transparent; /* o fundo agora é do container inteiro */
+  padding: 0;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#menup {
+  display: flex;           /* Mantém os links em linha */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  gap: 2rem;               /* Espaço entre os links */
+  font-size: 24px;
+  color: #A92B47;
+  font-weight: bold;
+  padding-right: 40px;      /* Espaço da borda direita */
+  padding-left: 0;          /* Remove padding esquerdo */
+  list-style: none;         /* Remove marcadores se for ul */
+}
+#menup a {
+  text-decoration: none;
+  color: #711818;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#prateleira {
+  width: 1900px;
+  max-width: -webkit-fill-available;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

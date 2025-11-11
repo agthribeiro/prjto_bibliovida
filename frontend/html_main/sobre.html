@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <title>Sobre Nós</title>
+
+    <style>
+        /* Estilo para a divisória sutil entre os blocos */
+        .divider {
+            width: 70%;
+            margin: 60px auto; /* Mais espaço que um <hr> normal */
+            height: 2px;
+            background-color: #A92B47; /* Cor principal do site */
+            border: 0;
+            opacity: 0.3; /* Deixa a linha mais sutil */
+            border-radius: 5px;
+        }
+
+        /* Estilo para os ícones nos títulos das caixas */
+        .caixa h2 .fas {
+            margin-right: 12px;
+            font-size: 22px; /* Um pouco menor que o título */
+            vertical-align: middle;
+            color: #f75276; /* Cor rosa dos títulos */
+        }
+
+        /* Estilo para o link na chamada de ação (CTA) no final */
+        #cta-link {
+            color: #f75276; /* Cor rosa */
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+        #cta-link:hover {
+            border-bottom: 2px solid #f75276;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-esquerda">
+            <img src="../img/logo.png" alt="Logo Bibliovida" id="logo_home">
+            
+            <nav class="menu" id="menu">
+                 <a href="../../index.html">Início</a> 
+                 <a href="sobre.html">Sobre</a> 
+                 <a href="livros.html">Livros</a> 
+                 <a href="contato.html">Contato</a> 
+            </nav>
+        </div>
+
+        <div id="login">
+            <a href="../html_login_e_cadastro/login.html"><button class="botão_login">login</button></a> 
+            <a href="../html_login_e_cadastro/cadastro.html"><button class="botão_login">Cadastro</button></a>
+        </div>
+    </header>
+    <main>
+
+        <h1 id="titulo_sobre">SOBRE NÓS</h1>
+        
+        <h2 id="subtitulo_livros" style="padding-top: 0; padding-bottom: 60px;">
+            Conheça nossa missão, nosso impacto e nossas histórias.
+        </h2>
+
+        
+        <div class="container-layout">
+            <img src="../img/reciclagem.png"  alt="Símbolo de Reciclagem">
+            <div class="caixa">
+                <h2><i class="fas fa-recycle"></i>Como nós impactamos positivamente?</h2>
+                <p>Reutilizar livros ajuda o meio ambiente porque reduz o consumo de recursos naturais usados na produção de novos exemplares, como papel, água e energia. Ao compartilhar, doar ou comprar livros usados, evita-se o desmatamento, diminui-se a poluição gerada na fabricação e no transporte, e reduz-se a quantidade de lixo. Além disso, prolongar a vida útil dos livros incentiva o consumo consciente e a valorização da educação sustentável.</p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="container-layout container-layout--reverso">
+            <div class="caixa">
+                <h2><i class="fas fa-users"></i>Inclusão de Colaboradores em Situação de Vulnerabilidade</h2>
+                <p>A iniciativa também busca promover a inclusão social e profissional de colaboradores em situação de vulnerabilidade. Pessoas desempregadas, em situação de rua ou em condição de risco social podem ser envolvidas nas etapas de coleta, triagem, restauração e redistribuição dos livros. Além de gerar uma renda alternativa e digna, essa ação estimula o desenvolvimento de habilidades manuais, sociais e educacionais, contribuindo para a autonomia e reintegração dessas pessoas à sociedade. Dessa forma, o projeto não apenas ajuda o meio ambiente por meio da reutilização de materiais, mas também promove a responsabilidade social e a valorização humana, transformando vidas enquanto incentiva a leitura e a sustentabilidade.</p>
+            </div>
+             <img src="../img/inclusão.jpg"  alt="Imagem ilustrativa">
+        </div>
+
+        <hr class="divider">
+
+        <div class="container-layout">
+            <img src="../img/restauração.jpg"  alt="Símbolo de Restauração">
+            <div class="caixa">
+                <h2><i class="fas fa-book-heart"></i>Histórias de quem trabalha na restauração</h2>
+                <p>Por trás de cada livro recuperado, existem pessoas que também estão reconstruindo suas próprias histórias. Muitos dos colaboradores envolvidos na restauração dos livros são pessoas que enfrentaram dificuldades como o desempreho, a falta de moradia ou a exclusão social. Ao participarem do projeto, esses trabalhadores encontram novas oportunidades de aprendizado e crescimento, redescobrem suas capacidades e passam a sentir orgulho de contribuir para algo maior.  Cada exemplar restaurado simboliza uma segunda chance, tanto para o livro quanto para quem o recupera. Essas histórias inspiram a comunidade e mostram que a sustentabilidade também é sobre pessoas, solidariedade e transformação. O ato de restaurar livros torna-se, assim, um gesto de esperança e de valorização humana.</p>
+            </div>
+        </div>
+
+        <div id="caixa_slogan" style="margin-top: 100px; max-width: 900px; padding: 30px 40px;">
+            <p style="font-size: 26px; line-height: 1.5;">Gostou da nossa missão? 
+                <a href="contato.html" id="cta-link">
+                    Entre em contato e saiba como doar!
+                </a>
+            </p>
+        </div>
+
+
+    </main>
+    
+    <footer id="footer">
+        <p id="letras_footer">&copy; 2025 Bibliovida. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
