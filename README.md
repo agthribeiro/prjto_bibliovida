@@ -1,4 +1,4 @@
-# 📚 ReBook — Plataforma de Renovação e Venda de Livros Usados
+# 📚 Bibliovida — Plataforma de Renovação e Venda de Livros Usados
 
 > Projeto Integrador | Tecnólogo em Análise e Desenvolvimento de Sistemas
 
@@ -6,7 +6,7 @@
 
 ## 🌱 Sobre o Projeto
 
-O **ReBook** é uma plataforma web desenvolvida como Projeto Integrador com o objetivo de dar uma segunda vida a livros usados. O sistema conecta pessoas que desejam doar ou vender seus livros com novos leitores interessados, promovendo a reutilização sustentável e a renovação física dos exemplares com materiais ecológicos.
+O **Bibliovida** é uma plataforma web desenvolvida como Projeto Integrador com o objetivo de dar uma segunda vida a livros usados. O sistema conecta pessoas que desejam doar ou vender seus livros com novos leitores interessados, promovendo a reutilização sustentável e a renovação física dos exemplares com materiais ecológicos.
 
 **Pilares do projeto:**
 
@@ -182,7 +182,7 @@ Livros classificados como **"renovados"** passaram pelo processo de restauro sus
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido para fins acadêmicos como parte do **Projeto Integrador** do curso de Tecnologia em Análise e Desenvolvimento de Sistemas.
+Este projeto foi desenvolvido para fins acadêmicos como parte do **Projeto Integrador** com integrante nos cursos de Tecnologias em Ciências da Computação & Análise e Desenvolvimento de Sistemas.
 
 ---
 
